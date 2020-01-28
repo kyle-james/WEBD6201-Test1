@@ -33,6 +33,7 @@ let app;
     {
         OneA();
         OneB();
+        OneC();
     }
 
     function OneA()
@@ -49,6 +50,12 @@ let app;
 
         var button = document.getElementById("largeButton").parentElement; //gets the parent element of 'largeButton'
         button.insertBefore(element, button.children[2]); //inserts the new h3 element just before the 'largeButton' element
+    }
+
+    function OneC()
+    {
+        document.getElementById("firstParagraph").innerText = "JavaScript is a prototype-based language, and every object in JavaScript has a hidden internal property called Prototype that can be used to extend object properties and methods.";
+        //the above statement changes the text of the element with id 'firstParagraph'
     }
 
 
