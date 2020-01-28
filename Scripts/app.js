@@ -34,6 +34,7 @@ let app;
         OneA();
         OneB();
         OneC();
+        OneD();
     }
 
     function OneA()
@@ -58,6 +59,11 @@ let app;
         //the above statement changes the text of the element with id 'firstParagraph'
     }
 
+    function OneD()
+    {
+        document.getElementById("firstParagraph").hidden = true;
+        //this hides the 'firstParagraph' element
+    }
 
     window.addEventListener("load", Start);
 })(app || (app = {}));
