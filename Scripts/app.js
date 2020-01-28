@@ -1,7 +1,7 @@
 /*
-    Student Name  :
-    StudentID     :
-    Date Completed:
+    Student Name  : Kyle James
+    StudentID     : 100704048
+    Date Completed: Jan. 28, 2020
 */
 
 "use strict";
@@ -31,7 +31,12 @@ let app;
      */
     function Main()
     {
+        OneA();
+    }
 
+    function OneA()
+    {
+        document.getElementById("largeButton").innerText = "Learn More";
     }
 
 
