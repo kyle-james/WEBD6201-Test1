@@ -35,7 +35,9 @@ let app;
         OneB();
         OneC();
         OneD();
+        TwoA();
     }
+
 
     function OneA()
     {
@@ -65,6 +67,26 @@ let app;
         //this hides the 'firstParagraph' element
     }
 
+    function TwoA()
+    {
+        document.getElementById("largeButton").addEventListener("click", TwoAA());
+    }
+
+    function TwoAA(button)
+    {
+        if(document.getElementById("largeButton").innerText == "Learn More")
+        {
+            document.getElementById("largeButton").innerText = "Hide Details";
+            document.getElementById("firstParagraph").hidden = false;   
+            console.log("visible");
+        }
+        else if (document.getElementById("largeButton").innerText == "Hide Details")
+        {
+            document.getElementById("largeButton").innerText = "Learn More";
+            document.getElementById("firstParagraph").hidden = true;
+            console.log("invisible");
+        }
+    }
     window.addEventListener("load", Start);
 })(app || (app = {}));
 
